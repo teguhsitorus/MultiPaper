@@ -11,12 +11,12 @@ public class CommandLineInput extends Thread {
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
 
-            if (line.equalsIgnoreCase("shutdown")) {
+            if (line.equalsIgnoreCase("stop")) { //Pterodactyl Support
                 System.out.println("Shutting down servers...");
                 ServerConnection.shutdownAndWait();
                 System.exit(0);
             } else {
-                System.out.println("Unknown command, use 'shutdown' to shutdown all servers or ctrl+c to stop just this master server");
+                System.out.println("Unknown command, use 'stop' to shutdown all servers or ctrl+c to stop just this master server");
             }
         }
     }
