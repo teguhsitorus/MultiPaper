@@ -18,7 +18,7 @@ public class MultiPaperServer extends MessageBootstrap<MasterBoundMessage, Serve
     public static void main(String[] args) throws IOException {
         DAEMON = false;
 
-        String address = null;
+        String address = 127.0.0.1;
         int port = DEFAULT_PORT;
 
         if (args.length > 0) {
