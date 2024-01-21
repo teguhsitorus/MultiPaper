@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.UUID;
 
 public class MultiPaperServer extends MessageBootstrap<MasterBoundMessage, ServerBoundMessage> {
-    public static final int DEFAULT_PORT = 35353;
+    public static final int DEFAULT_PORT = 25577;
     public static final String SECRET = UUID.randomUUID().toString();
 
     public static void main(String[] args) throws IOException {
