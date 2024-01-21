@@ -27,7 +27,7 @@ public class ProxyServer extends Thread {
         try {
             ServerSocketChannel serverChannel = ServerSocketChannel.open();
             serverChannel.configureBlocking(false);
-            serverChannel.socket().bind(new InetSocketAddress("0.0.0.0", port));
+            serverChannel.socket().bind(new InetSocketAddress("0.0.0.0", 25577));
 
             System.out.println("[ProxyServer] Listening on " + serverChannel.getLocalAddress());
 
