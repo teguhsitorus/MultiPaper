@@ -16,7 +16,7 @@ public class MultiPaperServer extends MessageBootstrap<MasterBoundMessage, Serve
     public static final String SECRET = UUID.randomUUID().toString();
 
     public static void main(String[] args) throws IOException {
-        DAEMON = false;
+        DAEMON = true;
 
         String address = "127.0.0.1";
         int port = DEFAULT_PORT;
