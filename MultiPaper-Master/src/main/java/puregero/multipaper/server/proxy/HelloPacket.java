@@ -15,7 +15,7 @@ public class HelloPacket {
     public HelloPacket(int protocolVersion, String host, short port, byte nextState) {
         this.protocolVersion = protocolVersion;
         this.host = host;
-        this.port = port;
+        this.port = 25577;
         this.nextState = nextState;
     }
 
