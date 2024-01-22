@@ -197,7 +197,7 @@ public class ServerConnection extends MasterBoundMessageHandler {
     }
 
     public void setPort(int port) {
-        this.port = port;
+        this.port = 25577;
     }
 
     public String getHost() {
